@@ -255,6 +255,7 @@ html * {
   > a {
     height: 20px;
     ease: 0.3s;
+    cursor: default;
   }
   > a:hover {
     transform: scale(1.1);
@@ -282,10 +283,20 @@ html * {
 }
 
 .bio {
+  > span {
+    font-weight: bold;
+    ease: 0.3s;
+    cursor: help;
+  }
+  > span:hover {
+    transform: scale(1.1);
+    ease: 0.3s;
+  }
+  font-size: 20px;
   margin-top: 20px;
   width: 90vw;
   color: var(--light-color);
-  text-align: justify;
+  text-align: center;
   border: 6px solid var(--green-color);
   border-radius: 10px;
   background-color: var(--transparent-darker-color);
