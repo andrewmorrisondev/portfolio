@@ -30,7 +30,6 @@ html * {
   height: 100vh;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
-  scroll-behavior: snap;
 }
 
 .scroll-snap-item {
@@ -218,6 +217,56 @@ html * {
   height: 220px;
   margin-top: 80px;
   overflow: hidden;
+  
+}
+
+.info {
+  display: none;
+  margin-top: -210px;
+  height: 102%;
+  width: 100%;
+  background-color: var(--transparent-darker-color);
+  backdrop-filter: blur(5px);
+  z-index: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  > h3 {
+    color: var(--light-color);
+    margin-bottom: 10px;
+  }
+  > .project-links {
+    font-size: 20px;
+    color: var(--light-color);
+    > a {
+      color: var(--light-color);
+    }
+    > a:visited {
+      color: var(--light-color);
+    }
+  }
+  > .project-tech {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--transparent-green-color);
+    height: 50%;
+    margin-top: 42px;
+    > img {
+      width: 20%;
+    }
+    > :last-child {
+      width:  16%;
+    }
+  }
+}
+
+.show {
+  display: flex;
+}
+
+.hide {
+  display: none;
 }
 
 #skills {
