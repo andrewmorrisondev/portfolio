@@ -222,6 +222,7 @@ html * {
 
 .info {
   display: none;
+  pointer-events: none;
   margin-top: -210px;
   height: 102%;
   width: 100%;
@@ -238,6 +239,7 @@ html * {
   > .project-links {
     font-size: 20px;
     color: var(--light-color);
+    pointer-events: auto;
     > a {
       color: var(--light-color);
     }
