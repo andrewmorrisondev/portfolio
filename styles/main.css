@@ -355,9 +355,12 @@ html * {
   padding: 20px;
 }
 
-@media all and (max-width: 750px) {
-  /* CSS rules here for screens lower than 750px */
-  
+@media all and (max-width: 796px) {
+  /* CSS rules here for screens smaller than 750px */
+  .scroll-snap-container {
+    padding-bottom: 650px;
+  }
+
   .scroll-snap-item {
     scroll-snap-align: none;
   }
