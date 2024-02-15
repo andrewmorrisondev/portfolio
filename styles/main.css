@@ -105,6 +105,10 @@ html * {
   }
   > .welcome-buttons {
     display: flex;
+    > .contact > a {
+      text-decoration: none;
+      color: var(--green-color);
+    }
     > button {
       width: 120px;
       height: 60px;
